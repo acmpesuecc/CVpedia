@@ -1,40 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
     <style>
-        body {
-            background-color: lightblue;
-            border-style: double;
+        body,
+        html {
+            height: 100%;
+            margin: 0;
         }
 
-        #heading {
+        .bg {
+
+            background-image: url("background.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
             text-align: center;
-            color: blue;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid whitesmoke
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: black;
+        }
+
+        .active {
+            background-color: #4CAF50;
         }
     </style>
 </head>
 
 <body>
-    <h1 id='heading'>Hey i am hosting this on github</h1>
-    <ul>
-        <li>>Home</li>
-        <li><a
-                href="https://www.google.com/search?q=news+&biw=681&bih=611&tbm=nws&sxsrf=ALeKk00TfprFmCu829o50rlgRK86L7xMSg%3A1619360375532&ei=d3qFYJjuH7aO4-EPv9aSuAI&oq=news+&gs_l=psy-ab.3..0l10.5012.5384.0.6046.3.3.0.0.0.0.180.415.1j2.3.0....0...1c.1.64.psy-ab..0.3.414...0i13k1.0.Zd-80BvBfC0">News</a>
-        </li>
-        <li>Contact</li>
-    </ul>
-    <script src='demo.js'></script>
+    <div class='bg'>
+        <h1>Ayaan's ION</h1>
+        <ul><b>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a
+                        href="https://www.google.com/search?q=news+&biw=681&bih=611&tbm=nws&sxsrf=ALeKk00TfprFmCu829o50rlgRK86L7xMSg%3A1619360375532&ei=d3qFYJjuH7aO4-EPv9aSuAI&oq=news+&gs_l=psy-ab.3..0l10.5012.5384.0.6046.3.3.0.0.0.0.180.415.1j2.3.0....0...1c.1.64.psy-ab..0.3.414...0i13k1.0.Zd-80BvBfC0">News</a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right"><a href="#about">About</a></li>
+            </b>
+        </ul>
+    </div>
 </body>
 
 </html>
