@@ -4,6 +4,21 @@
 <head>
     <title>CVpedia</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #wrap {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            top: 0;
+            height: 100%;
+        }
+
+        #iframe1 {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,8 +32,10 @@
                 <li style="float:right"><a href="#about">About</a></li>
             </b>
         </ul>
-        <iframe
-            src='https://www.google.com/search?q=news+&biw=681&bih=611&tbm=nws&sxsrf=ALeKk00TfprFmCu829o50rlgRK86L7xMSg%3A1619360375532&ei=d3qFYJjuH7aO4-EPv9aSuAI&oq=news+&gs_l=psy-ab.3..0l10.5012.5384.0.6046.3.3.0.0.0.0.180.415.1j2.3.0....0...1c.1.64.psy-ab..0.3.414...0i13k1.0.Zd-80BvBfC0'></iframe>
+        <div id="wrap">
+            <iframe id='iframe1'
+                src='https://www.google.com/search?q=news+&biw=681&bih=611&tbm=nws&sxsrf=ALeKk00TfprFmCu829o50rlgRK86L7xMSg%3A1619360375532&ei=d3qFYJjuH7aO4-EPv9aSuAI&oq=news+&gs_l=psy-ab.3..0l10.5012.5384.0.6046.3.3.0.0.0.0.180.415.1j2.3.0....0...1c.1.64.psy-ab..0.3.414...0i13k1.0.Zd-80BvBfC0'></iframe>
+        </div>
     </div>
 </body>
 
