@@ -1,0 +1,72 @@
+.bg {
+  background-image: url("background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0px;
+}
+
+#ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  float: left;
+  border-right: 1px solid whitesmoke;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
+}
+
+.active {
+  background-color: rgb(201, 142, 66);
+}
+
+.card {
+  background-color: #333;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+#ul2 {
+  display: inline-block;
+  margin: 0;
+}
+
+li {
+  border: none;
+}
