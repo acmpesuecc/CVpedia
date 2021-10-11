@@ -15,6 +15,7 @@
 - [ ] Add more contact details and find a better way to share these details instead of manually doing it.
 - [ ] Add a webpage (.html) to allow for the user to detect cases in the area similiar to the UI of [this website](https://www.mygov.in/covid-19)
 - [ ] Use bootstrap to make the website UI and design look better.
+- [ ] Create webpages for other diseases 
 
 
 ### How to contribute:-
