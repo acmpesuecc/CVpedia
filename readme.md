@@ -20,5 +20,5 @@
 
 ### How to contribute:-
 
-Make you way to the [contrinuting.md]() file .
+Make you way to the contrinuting.md file .
 Note screenshots for each PR is needed.
