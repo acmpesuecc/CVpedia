@@ -1,5 +1,8 @@
 # Cvpedia
 
+Cap of 5 pull requests on the entire repository during the boost period.
+
+
 ### Purpose:-
  The use of this website is to record coronavirus cases and find accurate information so that it can be compiled together for easy access. Of course this website is coming up when coronavirus cases are going down but a website like this can be set up just in case another wave or a different pandemic occurs.
  
