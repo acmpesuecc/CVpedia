@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+<title> REGISTRATION FORM</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+
+<style>
+    
+    h4{
+        color:rgb(140, 220, 10);
+      }
+    
+    a:link{
+        color:rgb(118, 10, 220)
+    }
+    a:hover{
+        color:red
+    }
+    a:active{
+        color:rgb(0, 204, 255)
+    }
+   
+    div{
+            color:blue
+    }
+   
+    h1{
+        color:brown;
+      }
+      h2{
+        color : rgb(10, 143, 220)
+      }
+    form {
+			background-color:beige;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("h4").hide();
+	  });
+	 $(".btn2").click(function(){
+    $("h4").show();
+  });
+
+});
+</script>
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("div.d1").toggle(1500);  
+    });  
+});  
+</script>  
+</head>
+<body bgcolor="blue"> 
+<h1 align="center"><marquee><u><I>Student Registration Form!</u></I></marquee></h1>
+<button>Click here Toggle</button><br>  
+<div class="d1" style="border:3px solid black;padding:10px;width:200px">  
+<p style="color: chartreuse;"><b> UNIVERSITY</b> 
+</div>  
+
+<h4 align="center"><STRONG> My University</STRONG></h4><br>
+
+<button class="btn1">Hide</button>
+<button class="btn2">Show</button>
+
+<br>
+<form action="post" method="get" target="_blank">
+    <h2>Register</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="email"><b>Name</b></label><br/>
+    <input type="text" placeholder="Enter name" name="Name" id="email" required><br/>
+
+    <label for="srn"><b>SRN</b></label><br/>
+    <input type="text" placeholder="Enter  SRN " name="email" id="email" required><br/>
+
+    <label><b>Sem</b>  </label>  
+      <select>  
+      <option value = "1"> 1  
+      </option>  
+      <option value = "2"> 2  
+      </option>  
+      <option value = "3"> 3
+      </option>  
+      <option value = "4"> 4  
+      <option value = "1"> 5  
+      </option>  
+      <option value = "2"> 6   
+      </option>  
+      <option value = "3"> 7
+      </option>  
+      <option value = "4"> 8
+      </option>  
+      </select>  <br/>
+    <label for="email"><b>Email</b></label><br/>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br/>
+
+    <label for="phone"><b>Phone</b></label><br/>
+    <input type="phone" placeholder="phone num" name="phone" id="phone" required><br/>
+
+
+    <label for="psw"><b>Password</b></label><br/>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br/>
+
+    <label for="repeat"><b>Confirm Password</b></label><br/>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br/>
+
+      
+    <p style="font-size:xx-large ">&#128512;</p>
+    <hr>
+    
+  <div class="signin">
+    <p align="right" >Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+
+    <p> Please agree out term and conditon<a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div></ol>
+  
+  
+</script>
+</div>
+<input type="reset"/>
+</form>
+
+<script>
+  function myfun() {
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "emoji.png");
+    x.setAttribute("width", "100");
+    x.setAttribute("height", "70");
+    x.setAttribute("alt", "The emoji");
+    document.body.appendChild(x);
+  }
+  </script>
+  <input type="submit" onclick="myfun()"> 
+<script>
+  window.alert("Welcome to PES!!");
+</script>
+
+</body>
+</html>
