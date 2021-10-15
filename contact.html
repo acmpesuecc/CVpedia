@@ -1,49 +1,156 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>CVpedia</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <body>
     <div class='bg'>
         <h1>CVpedia</h1>
-        <ul id='ul1'><b>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="news.html">News</a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li style="float:right"><a href="#about">About</a></li>
-            </b>
-        </ul>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">CVpedia</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+              </ul>
+            </div>
+          </nav>
 
         <div class="card">
-            <h2>District Wise COVID 19 Control Room Numbers</h2>
-
-            <ul id='ul2'><b>
-
-                    <li><a href='tel:0831-2407290>'>Belagavi: 0831-2407290</a>
+            <h2 style="color: black;text-align: center;">District Wise COVID 19 Control Room Numbers</h2>
+<br/>
+            <!-- <ul id='ul2'>
+                    <li><a href='tel:08156-1077'>Chikkabalapur 08156-1077</a></li>
+                    <li><a href='tel:08262-238950'>Chikamangaluru 08262-238950</a>,<a href='tel:08262-1077'>Chikamangaluru 08262-1077</a>
                     </li>
-                    <br>
-                    <li><a href='tel:080-1077'>Bengaluru Urban #1 </a>,<a href='tel:080-22967200'>Bengaluru Urban #2</a>
-                    </li><br>
-                    <li><a href='tel:080-29781021'>Bengaluru Rural</a></li><br>
-                    <li><a href='tel:18004254316'>Bidar</a></li><br>
-                    <li><a href='tel:08226-1077'>Chamarajanagar #1</a>,<a href='tel:08226-223160'>Chamarajanagar #2</a>
-                    </li><br>
-                    <li><a href='tel:08156-1077'>Chikkabalapur</a></li><br>
-                    <li><a href='tel:08262-238950'>Chikamangaluru #1</a>,<a href='tel:08262-1077'>Chikamangaluru #2</a>
-                    </li><br>
-                    <li><a href='tel:08194-222050'>Chitradurga #1</a>,<a href='tel:08194-222044'>Chitradurga #2</a></li>
-                    <br>
-                    <li><a href='tel:08192-234034'>Davangere #1</a>,<a href='tel:08192-1077'></a>Davangare #2</li><br>
-                    <li><a href='tel:0836-1077'>Dharwad #1</a>,<a href='tel:0836-2447547'>Dharwad #2</a></li><br>
-                    <li><a href='tel:08372-239177'>Gadag #1</a>,<a href='tel:08372-1077'> Gadag #2</a></li><br>
-                    <li><a href='tel:08172-261111'>Hassan #1</a>,<a href='tel:08172-1077'>Hasssan #2</a></li><br>
-                    <li><a href='tel:08375-249102'>Haveri #1</a>,<a href='tel:08375-249104'>Haveri #2</a></li><br>
-                </b>
-            </ul>
+                    <li><a href='tel:08194-222050'>Chitradurga 08194-222050</a>,<a href='tel:08194-222044'>Chitradurga #2</a></li>
+                    <li><a href='tel:08192-234034'>Davangere #1</a>,<a href='tel:08192-1077'>Davangare #2</a></li>
+                    <li><a href='tel:0836-1077'>Dharwad #1</a>,<a href='tel:0836-2447547'>Dharwad #2</a></li>
+                    <li><a href='tel:08372-239177'>Gadag #1</a>,<a href='tel:08372-1077'> Gadag #2</a></li>
+                    <li><a href='tel:08172-261111'>Hassan #1</a>,<a href='tel:08172-1077'>Hasssan #2</a></li>
+                    <li><a href='tel:08375-249102'>Haveri #1</a>,<a href='tel:08375-249104'>Haveri #2</a></li>
+            </ul> -->
+            <div class="card-columns">
+                <div class="card p-3 border-dark mb-3">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">0831-2407290</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                          Belagavi
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-dark mb-3">
+                    <blockquote class="blockquote mb-0" >
+                      <p style="text-align: center;">080-1077</p>
+                      <p style="text-align: center;">080-22967200</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Bengaluru Urban
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">080-29781021</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Bengaluru Rural 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">18004254316</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Bidar 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-dark mb-3 ">
+                  <blockquote class="blockquote mb-0">
+                    <p style="text-align: center;">08226-1077</p>
+                    <p style="text-align: center;">08226-223160</p>
+                    <footer class="blockquote-footer text-right">
+                      <small class="text-muted">
+                        Chamarajanagar 
+                      </small>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">08194-222050</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Chitradurga  
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">08192-234034</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Davangere  
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">0836-1077</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Dharwad
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">08372-239177</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Gadag 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">08172-261111</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Hassan 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-dark mb-3 ">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;">08375-249102</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Haveri 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+              </div>
         </div>
     </div>
 </body>

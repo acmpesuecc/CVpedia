@@ -1,5 +1,7 @@
 .bg {
-  background-image: url("background.jpg");
+  /* background-image: url("background.jpg");
+   */
+   background-color: white;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,6 +13,14 @@ body,
 html {
   height: 100%;
   margin: 0px;
+}
+
+a:hover{
+  color: black;
+}
+
+a{
+  color: black;
 }
 
 h1 {
@@ -40,18 +50,19 @@ li:last-child {
 
 li a {
   display: block;
-  color: whitesmoke;
+  color: rgb(8, 2, 2);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: black;
+  background-color: #e5d2ff;
+  color: black;
 }
 
 .active {
-  background-color: rgb(201, 142, 66);
+  background-color: #e5d2ff
 }
 
 .card {
@@ -69,4 +80,21 @@ h2 {
 
 li {
   border: none;
+}
+#ul2 li{
+
+  float: none;
+}
+#ul2 li a{
+  background: #e5d2ff;
+  padding: 3%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+.img{
+  align-self: center;
+  border-radius: 1rem;
+  margin-left: 20%;
 }
