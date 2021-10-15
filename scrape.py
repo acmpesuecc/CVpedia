@@ -1,13 +1,16 @@
 from bs4 import BeautifulSoup
 from requests import get
-# import pandas as pd
+import pandas as pd
 from tqdm import tqdm
 from dateutil import parser
 import string
+from flask import Flask, render_template, url_for
+
+app = Flask(__name__)
 
 # Checking for the total no. of pages
 
-url = 'https://timesofindia.indiatimes.com/topic/Sanitizer/news/'
+url = 'https://timesofindia.indiatimes.com/topic/coronavirus-india'
 soup = BeautifulSoup(get(url).text, 'lxml')
 
 ##Because the website displays ages only till 20
@@ -26,7 +29,7 @@ for index in max_urls:
         # Extracts the Headlines
         try:
             headline = [soup.select('span.title')[i].text.strip() for i in range(len(soup.select('span.title')))]
-            print(headline)
+            #print(headline)
             headlines.extend(headline)
         except:
             headlines.extend(None)
@@ -79,17 +82,30 @@ for index in tqdm(urls):
 
 print("[INFO] Articles Extracted.")
 
-# df = pd.DataFrame({'Headlines': headlines,
-#                    'Article': news,
-#                    'Published_Dates': dates,
-#                    'Source_URLs': urls
-#                    })
-# # Checking for any missing values in the Dataframe
-# # print(df.isna().sum())
+df = pd.DataFrame({'Headlines': headlines,
+                   'Article': news,
+                   'Published_Dates': dates,
+                   'Source_URLs': urls
+                   })
+print(df.head(5))
 
+headlines=list(df.head(10)['Headlines'])
+sources=list(df.head(10)['Source_URLs'])
+dates=list(df.head(10)['Published_Dates'])
+print(headlines)
 
-# # Now also dropping all the other rows with empty values
-# # df=df.dropna(axis = 0)
-# print("Length: ", df.shape)
+@app.route('/news.html')
+def news():
+    return render_template('news.html', headlines=headlines, sources=sources, dates=dates)
 
-# df.to_csv("export.csv")
+@app.route('/')
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
+
+@app.route('/contact.html')
+def contact():
+    return render_template('contact.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
