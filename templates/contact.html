@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <body>
     <div class='bg'>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">CVpedia</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="#about">About</a></li> -->
-              </ul>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{ url_for('index') }}">CVpedia</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('news') }}">News</a></li>
+            <li class="active"><a href="{{ url_for('contact') }}">Contact</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+          </ul>
+        </div>
+      </nav>
 
         <div class="card" style="background: #171717;">
             <h2 style="color: #fafafa;text-align: center;">District Wise COVID 19 Control Room Numbers</h2>
