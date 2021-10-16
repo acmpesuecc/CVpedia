@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<body>
+    <div class='bg'>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{ url_for('index') }}">CVpedia</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('news') }}">News</a></li>
+            <li class="active"><a href="{{ url_for('contact') }}">Contact</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+          </ul>
+        </div>
+      </nav>
+
+        <div class="card" style="background: #171717;">
+            <h2 style="color: #fafafa;text-align: center;">District Wise COVID 19 Control Room Numbers</h2>
+<br/>
+            <!-- <ul id='ul2'>
+                    <li><a href='tel:08156-1077'>Chikkabalapur 08156-1077</a></li>
+                    <li><a href='tel:08262-238950'>Chikamangaluru 08262-238950</a>,<a href='tel:08262-1077'>Chikamangaluru 08262-1077</a>
+                    </li>
+                    <li><a href='tel:08194-222050'>Chitradurga 08194-222050</a>,<a href='tel:08194-222044'>Chitradurga #2</a></li>
+                    <li><a href='tel:08192-234034'>Davangere #1</a>,<a href='tel:08192-1077'>Davangare #2</a></li>
+                    <li><a href='tel:0836-1077'>Dharwad #1</a>,<a href='tel:0836-2447547'>Dharwad #2</a></li>
+                    <li><a href='tel:08372-239177'>Gadag #1</a>,<a href='tel:08372-1077'> Gadag #2</a></li>
+                    <li><a href='tel:08172-261111'>Hassan #1</a>,<a href='tel:08172-1077'>Hasssan #2</a></li>
+                    <li><a href='tel:08375-249102'>Haveri #1</a>,<a href='tel:08375-249104'>Haveri #2</a></li>
+            </ul> -->
+            <div class="card-columns" style="background: #171717;">
+                <div class="card p-3 border-light mb-3" style="background:#32323275" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">0831-2407290</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                          Belagavi
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0" >
+                      <p style="text-align: center;color: white;">080-1077</p>
+                      <p style="text-align: center;color: white;">080-22967200</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Bengaluru Urban
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">080-29781021</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Bengaluru Rural 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">18004254316</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Bidar 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                <div class="card p-3 border-light mb-3" style="background:#32323275">
+                  <blockquote class="blockquote mb-0">
+                    <p style="text-align: center;color: white;">08226-1077</p>
+                    <p style="text-align: center;color: white;">08226-223160</p>
+                    <footer class="blockquote-footer text-right">
+                      <small class="text-muted">
+                        Chamarajanagar 
+                      </small>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">08194-222050</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Chitradurga  
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">08192-234034</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Davangere  
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">0836-1077</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Dharwad
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">08372-239177</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Gadag 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">08172-261111</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Hassan 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card p-3 border-light mb-3" style="background:#32323275">
+                    <blockquote class="blockquote mb-0">
+                      <p style="text-align: center;color: white;">08375-249102</p>
+                      <footer class="blockquote-footer text-right">
+                        <small class="text-muted">
+                            Haveri 
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+              </div>
+        </div>
+    </div>
+</body>
+
+</html>
